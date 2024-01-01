@@ -19,6 +19,9 @@ public static class BusinessServiceRegistration
 
         services.AddScoped<IProductService, ProductManager>();
         services.AddScoped<ICategoryService, CategoryManager>();
+        services.AddScoped<ProductBusinessRules>();
+
+        services.AddScoped<CategoryBusinessRules>();
 
         return services;
     }
